@@ -1,0 +1,15 @@
+rm bin/*.o
+echo "Building..."
+gcc -c       src/main.cpp -o bin/main.o
+gcc -c       src/intelhexclass.cpp -o bin/intelhexclass.o
+
+gcc -c       src/utils.cpp -o bin/utils.o
+gcc -c       src/wiring.cpp -o bin/wiring.o
+gcc -c       src/cc_interface.cpp -o bin/cc_interface.o
+#
+# Create the object files for the static library (without -fPIC)
+#
+#gcc -c       src/cc11xx/cc_interface.cpp    -o bin/static/cc_interface.o
+#gcc   bin/main.o bin/utils.o bin/cc_interface.o -Lbin/static -ltq84 -o bin/statically-linked
+#g++  -v bin/main.o bin/utils.o bin/cc_interface.o bin/wiring.o -o bin/egcc
+gcc  -lc++ bin/main.o bin/intelhexclass.o bin/utils.o bin/cc_interface.o bin/wiring.o -o bin/flasher
