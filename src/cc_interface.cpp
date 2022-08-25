@@ -1,13 +1,29 @@
 #include <stdint.h>
 #include <cstddef>
+
+#ifdef MACHINE_RPI
+#include <wiringPi.h>
+#else
 #include "wiring.h"
+#endif
+
+
 #include "cc_interface.h"
+#include <stdio.h>
 
 uint16_t CC_interface::begin(uint8_t CC, uint8_t DD, uint8_t RESET)
 {
   _CC_PIN = CC;
   _DD_PIN = DD;
   _RESET_PIN = RESET;
+
+
+#ifdef MACHINE_RPI
+  if(wiringPiSetup() == -1){
+    printf("CC_interface: No wiring pi detected\n");
+    return 0;
+  }
+#endif
 
   pinMode(_CC_PIN, OUTPUT);
   pinMode(_DD_PIN, OUTPUT);
@@ -108,7 +124,7 @@ uint8_t CC_interface::erase_chip()
 {
   opcode(0x00); // NOP
   send_cc_cmdS(0x14);
-  int timeout = millis() + 100;
+  int timeout = millis() + TIMEOUT;
   while (!(send_cc_cmdS(0x34) & 0x80))
   {
     if (millis() > timeout)
@@ -176,7 +192,7 @@ void CC_interface::set_pc(uint16_t address)
 uint8_t CC_interface::clock_init()
 {
   opcode(0x75, 0xc6, 0x00);
-  int timeout = millis() + 100;
+  int timeout = millis() + TIMEOUT;
   while (!(opcode(0xe5, 0xbe) & 0x40))
   {
     if (millis() > timeout)
@@ -205,7 +221,7 @@ uint8_t CC_interface::write_code_memory(uint16_t address, uint8_t buffer[], int 
     opcode(0x75, 0xC7, 0x51);
     set_pc(0xf100);
     send_cc_cmdS(0x4c);
-    int timeout = millis() + 500;
+    int timeout = millis() + WR_TIMEOUT;
     while (!(send_cc_cmdS(0x34) & 0x08))
     {
       if (millis() > timeout)

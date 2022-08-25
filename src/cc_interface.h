@@ -57,4 +57,8 @@ class CC_interface
     callbackPtr _callback = nullptr;
 };
 
+#define  TIMEOUT (500)
+#define WR_TIMEOUT (750)
+
+
 extern CC_interface cc;

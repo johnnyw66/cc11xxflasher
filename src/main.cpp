@@ -20,7 +20,8 @@ void usage()
 // https://github.com/codinghead/Intel-HEX-Class
 
 
-uint8_t * build_memblock(string fname) {
+uint8_t * build_memblock(string fname, int *sz) {
+
   std::ifstream intelHexInput;
   intelhex iHexHelper;
   uint8_t * memblock ;
@@ -44,21 +45,21 @@ uint8_t * build_memblock(string fname) {
   printf("Start Address %lu\n",start_address);
   iHexHelper.end() ;
   unsigned long end_address = iHexHelper.currentAddress();
-  printf("End Address %lu", end_address) ;
+  printf("End Address %lu\n", end_address) ;
   int size =  end_address - start_address ;
   printf("Size %d\n",size) ;
+  *sz = size ;
+
   memblock = new uint8_t [size];
   int wr = 0 ;
 
   for (unsigned long i = 0 ; i < size ; i++) {
+    memblock[i] = 0 ;
     unsigned char data ;
     if (iHexHelper.getData(&data, i)) {
       memblock[i] = data ;
-      wr++ ;
-
-    } else {
-      printf("FAILED %lu\n", i) ;
     }
+    wr++ ;
   }
   printf("Written %d bytes\n", wr) ;
   return memblock ;
@@ -108,7 +109,7 @@ int testihex(const int argc,  char *argv[])
 
   intelHexInput >> classTest;
 
-  cout << "Final address is 0x" << setw(2) << setfill('0') << uppercase << hex << classTest.currentAddress() << endl;
+  //cout << "Final address is 0x" << setw(2) << setfill('0') << uppercase << hex << classTest.currentAddress() << endl;
 
   cout << "File contained " << classTest.getNoWarnings() << " warnings and "
        << classTest.getNoErrors() << " errors." << endl;
@@ -135,9 +136,10 @@ int testihex(const int argc,  char *argv[])
 void flash_firmware(const char * firmware_filename)
 {
   uint8_t * memblock ;
-  memblock = build_memblock(firmware_filename) ;
-  int flashing_size = 4604 ;
-  
+  int flashing_size ;
+  memblock = build_memblock(firmware_filename, &flashing_size) ;
+  printf("flash_firmware: size = %d\n", flashing_size) ;
+
   uint16_t device_id = cc.begin(CCDEBUG_CLK, CCDEBUG_DATA, CCDEBUG_RESET);
   printf("Device id: %s\n",array_to_hex_string((uint8_t *)&device_id, 2, true).c_str());
 
@@ -216,11 +218,11 @@ void percent_callback(uint8_t percent)
 int main(const int argc,  char *argv[])
 {
   //delay(1000);
-  printf("Welcome to CC Flasher. DC %d DD %d RST %d\n",CCDEBUG_CLK,CCDEBUG_DATA,CCDEBUG_RESET) ;
-  //cc.set_callback(percent_callback);
+  printf("Welcome to CC Flasher. DC %d DD %d RST %d TIMEOUT %d ms WRITE TIMEOUT %d ms\n",CCDEBUG_CLK,CCDEBUG_DATA,CCDEBUG_RESET,TIMEOUT,WR_TIMEOUT) ;
+  cc.set_callback(percent_callback);
   //dump_firmware("dump") ;
   //flash_firmware("flash.hex");
   //testihex(argc, argv) ;
-  flash_firmware("flash.hex") ;
+  flash_firmware(argv[1]) ;
 
 }
