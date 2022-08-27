@@ -4,10 +4,17 @@ Bought a Yard Stick 1 (YS1) without the rfCat firmware being installed?
 
 If you have a Raspberry Pi - this utility will flash the c11111 source.
 
-Connect the following pins  - (Raspberry Pi 40 Pin Header) to your Yard Stick 1. Either on P1 or the Pogo Pads found on the back of the YS1.
+I stand on the shoulder of Giants
+---
+
+Thank you to *Aaron Christophel* for his github ESP_CC_Flasher project. https://github.com/atc1441/ESP_CC_Flasher
+
+Most of the source is from his project with the exception of Intel Hex file handling being supported instead of binary firmware files
+(courtesey of Stuart Cording https://github.com/codinghead/Intel-HEX-Class)
 
 My Pin numbering convention
 ---
+Connect the following pins  - (Raspberry Pi 40 Pin Header) to your Yard Stick 1. Either on P1 or the Pogo Pads found on the back of the YS1.
 
 The square on the inner row of P1 - I refer to as Pin 1.  Pins 1 to 7 (left to right) are on the inner row.
 Pin 8 is opposite Pin 1. Pins 8 to 14 (left to right) are on the outer row.
