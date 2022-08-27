@@ -33,7 +33,9 @@ Pin 1|  3.3V |8 (or 9)
 
 
 Make sure you have 'WiringPi' and gcc installed on your Pi. Download this git repo and run
-**./bld.sh** to compiler the source.
+**./bld.sh rpi** to compiler the source.
+
+(Note: **bld.sh** without any options will compile the source with dummy IO calls)
 
 To Run
 ---
