@@ -14,6 +14,7 @@ Pin 8 is opposite Pin 1. Pins 8 to 14 (left to right) are on the outer row.
 
 
 RPi|xxx| Yard Stick 1 
+-------| -------|-----
 (40 Pin)|yyy|(14 Pin P1)
 -------| -------|-----
 Pin 39| GND	|5  
