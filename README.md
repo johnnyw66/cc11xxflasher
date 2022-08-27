@@ -28,7 +28,8 @@ Pin 36| DC   |4
 Pin 35| RST  |3
 Pin 1|  3.3V |8 (or 9)
 
-![Home brew pogo programming device with Pi Zero](/images/alusub.jpg)
+![Home brew pogo programming device with Pi Zero](/images/YS1_PiZero_Programmer.jpg)
+![Home brew pogo programming device with Pi Zero](/images/YS1_Pogo_Pins_P1.jpg)
 
 
 Make sure you have 'WiringPi' and gcc installed on your Pi. Download this git repo and run
