@@ -10,7 +10,7 @@ I stand on the shoulder of Giants
 Thank you to *Aaron Christophel* for his github ESP_CC_Flasher project. https://github.com/atc1441/ESP_CC_Flasher
 
 Most of the source is from his project with the exception of Intel Hex file handling being supported instead of binary firmware files
-(courtesey of Stuart Cording https://github.com/codinghead/Intel-HEX-Class)
+(Courtesey of Stuart Cording https://github.com/codinghead/Intel-HEX-Class)
 
 My Pin numbering convention
 ---
