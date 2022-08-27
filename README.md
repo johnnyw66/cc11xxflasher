@@ -14,11 +14,12 @@ Pin 8 is opposite Pin 1. Pins 8 to 14 (left to right) are on the outer row.
 
 
 RPi|xxx| Yard Stick 1 
--------| -------|-----
 (40 Pin)|yyy|(14 Pin P1)
+-------| -------|-----
 Pin 39| GND	|5  
 Pin 38| DD   |1
 Pin 36| DC   |4
 Pin 35| RST  |3
 Pin 1|  3.3V |8 (or 9)
 
+![SAP2 Inspired Project](/images/alusub.jpg)
