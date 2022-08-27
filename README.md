@@ -21,4 +21,16 @@ Pin 36| DC   |4
 Pin 35| RST  |3
 Pin 1|  3.3V |8 (or 9)
 
-![SAP2 Inspired Project](/images/alusub.jpg)
+![Home brew pogo programming device with Pi Zero](/images/alusub.jpg)
+
+
+Make sure you have 'WiringPi' and gcc installed on your Pi. Download this git repo and run
+**./bld.sh** to compiler the source.
+
+To Run
+---
+
+**./bin/flasher RfCatYS1.hex**
+
+
+
