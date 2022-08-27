@@ -2,7 +2,7 @@
 
 Bought a Yard Stick 1 (YS1) without the rfCat firmware being installed?
 
-If you have a Raspberry Pi - this utility will flash the c11111 source.
+If you have a Raspberry Pi - this utility will flash the cc1111 hex source.
 
 I stand on the shoulders of Giants
 ---
