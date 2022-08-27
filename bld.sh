@@ -1,6 +1,8 @@
 #!/bin/bash
 
-rm bin/*.o
+rm -rf bin/
+mkdir bin
+
 
 bld="$(tr [A-Z] [a-z] <<< "$1")"
 echo "Building...$bld"
