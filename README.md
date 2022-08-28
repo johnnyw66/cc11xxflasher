@@ -28,7 +28,10 @@ My Pin numbering convention
 Connect the following pins  - (Raspberry Pi 40 Pin Header) to your Yard Stick 1. Either on P1 or the Pogo Pads found on the back of the YS1.
 
 The square on the inner row of P1 - I refer to as Pin 1.  Pins 1 to 7 (left to right) are on the inner row.
-Pin 8 is opposite Pin 1. Pins 8 to 14 (left to right) are on the outer row.
+Pin 8 is opposite Pin 1. Pins 8 to 14 (left to right) are on the outer row. 
+
+You can double check you have wired up to the correct pins by cross checking with marked pads on the back of the board.
+
 
 
 RPi(40 Pin)|nomenclature| Yard Stick 1 (14 Pin P1) 
