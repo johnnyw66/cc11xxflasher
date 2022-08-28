@@ -67,8 +67,8 @@ For G1WVNFET (the flash software I ported described in this repo), run the comma
 
 ./bin/flasher CCBootloader-rfcat-ys1.hex
 
-If this is flashed successfully - both LEDs will come light up on your YS1. This means the device is in bootloader mode
-ready for the RfCat software to be flashed.
+If this is flashed successfully - both LEDs will light up on your YS1. This means the device is in bootloader mode
+and ready for the RfCat software to be flashed using *rfcat_bootloader* commands.
 
 Download the latest RFCAT image from 
 
@@ -84,14 +84,14 @@ rfcat_bootloader /dev/cu.usbmodem download RfCatYS1CCBootloader.hex
 rfcat_bootloader /dev/cu.usbmodem verify bins/RfCatYS1CCBootloader.hex && rfcat_bootloader /dev/cu.usbmodem run
 ````
 
-The finally *rfcat_bootloader* command 'run' will turn the LEDs off - and your device should now running *rfcat*
+The finally *rfcat_bootloader* command 'run' will turn the LEDs off - and your device should now be running *rfcat*
 
 
-For more updates - proceed the sequence of 'rfcat_bootloader' commands with the command
+For later updates - proceed the above sequence of 'rfcat_bootloader' commands with the command
 
-rfcat --bootloader --force -S 
+*rfcat --bootloader --force -S*
 
-This will force the YS1 to be ready to accept *rfcat_bootloader* commands so that you can install and verify updated firmware
-over your USB port.
+This will force the YS1 to accept *rfcat_bootloader* commands so that you can install and verify updated firmware
+over your USB port. 
  
  
