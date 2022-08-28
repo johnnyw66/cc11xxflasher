@@ -12,7 +12,7 @@ I argued that at I could use the clamp for other projects - so at least I saved 
 
 *Sourcingmap 33Pcs P125B Dia 2mm Length 33mm Spring Test Probes Testing Pins - Amazon UK
 
-Helping Hands with Big Magnet Base, Soldering Third Hand with 6 PCB Pillars Circuit Board Holder and 5 Flexible Metal Arms Heavy Duty Base for Repair/Resoldering/Hobby/Crafts - Amazon UK
+*Helping Hands with Big Magnet Base, Soldering Third Hand with 6 PCB Pillars Circuit Board Holder and 5 Flexible Metal Arms Heavy Duty Base for Repair/Resoldering/Hobby/Crafts - Amazon UK
 
 
 I stand on the shoulders of Giants
