@@ -43,7 +43,11 @@ To Run
 **./bin/flasher RfCatYS1.hex**
 
 
-# Updating Firmware - (ccbootloader preinstalled)
+Updating Firmware - (CCbootloader preinstalled) - a reminder
+---
+If you flash the YS1 with a CCbootloader - you can then use your own USB rather than this home brew Rpi solutionto install further updates
+
+
 ````
 rfcat --bootloader --force -S 
 rfcat_bootloader /dev/RFCAT_BL_YS1 erase_all
