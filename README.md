@@ -84,14 +84,14 @@ rfcat_bootloader /dev/cu.usbmodem download RfCatYS1CCBootloader.hex
 rfcat_bootloader /dev/cu.usbmodem verify bins/RfCatYS1CCBootloader.hex && rfcat_bootloader /dev/cu.usbmodem run
 ````
 
-The finally *rfcat_bootloader* command 'run' will turn the LEDs off - and your device should now be running *rfcat*
+The final *rfcat_bootloader* command 'run' will turn the LEDs off - and your device should now be running *rfcat*
 
 
-For later updates - proceed the above sequence of 'rfcat_bootloader' commands with the command
+Once CCBootloader is installed future updates can be initiated with the rfcat command 
 
 *rfcat --bootloader --force -S*
 
-This will force the YS1 to accept *rfcat_bootloader* commands so that you can install and verify updated firmware
-over your USB port. 
+This will force the YS1 to accept *rfcat_bootloader* commands (erase_all, download, verify and run) through the USB port.
+
  
  
