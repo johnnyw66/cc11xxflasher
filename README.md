@@ -1,4 +1,4 @@
-# cc11xxflasher
+# cc11xxflasher G1WVNFET
 
 Bought a Yard Stick 1 (YS1) without the rfCat firmware being installed?
 
