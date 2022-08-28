@@ -81,7 +81,7 @@ For example: RfCat*YS1*CCBootloader.hex
 ````
 rfcat_bootloader /dev/cu.usbmodem erase_all
 rfcat_bootloader /dev/cu.usbmodem download RfCatYS1CCBootloader.hex
-rfcat_bootloader /dev/cu.usbmodem verify bins/RfCatYS1CCBootloader.hex && rfcat_bootloader /dev/cu.usbmodem run
+rfcat_bootloader /dev/cu.usbmodem verify RfCatYS1CCBootloader.hex && rfcat_bootloader /dev/cu.usbmodem run
 ````
 
 The final *rfcat_bootloader* command 'run' will turn the LEDs off - and your device should now be running *rfcat*
