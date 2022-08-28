@@ -43,4 +43,10 @@ To Run
 **./bin/flasher RfCatYS1.hex**
 
 
+# Updating Firmware - (ccbootloader preinstalled)
+rfcat --bootloader --force -S 
+rfcat_bootloader /dev/RFCAT_BL_YS1 erase_all
+rfcat_bootloader /dev/RFCAT_BL_YS1 download RfCatYS1CCBootloader-201231.hex
+rfcat_bootloader /dev/RFCAT_BL_YS1 verify bins/RfCatYS1CCBootloader-201231.hex && rfcat_bootloader /dev/RFCAT_BL_YS1 run
+
 
