@@ -97,6 +97,9 @@ rfcat_bootloader /dev/cu.usbmodem erase_all
 rfcat_bootloader /dev/cu.usbmodem download RfCatYS1CCBootloader.hex
 rfcat_bootloader /dev/cu.usbmodem verify RfCatYS1CCBootloader.hex && rfcat_bootloader /dev/cu.usbmodem run
 ````
+You'll need to find the name of your 'bootloader' serial device under your OS. Simply do a 'ls -l /dev/\*' before and after 
+plugging in your YS1 (in CCBootloader mode) into your USB port. On my MAC OS X - this was /dev/cu.usbmodem.
+
 
 The final *rfcat_bootloader* command 'run' will turn the LEDs off - and your device should now be running *rfcat*
 
