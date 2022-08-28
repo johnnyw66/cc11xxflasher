@@ -7,10 +7,12 @@ indicator that I didn't get what I paid for. More worringly I found that my supp
 On Discord I found another buyer had bought one from another recommended supplier which also turn out to be a pup. The only way of getting the device back to life was to buy a flash programmer another £50 to £120. WTF! Since I only needed to flash the firmware once, buying one of the programmers (GoodFET, GreatFET, TI-CCDebugger) was going to be expensive. I've seen *bit-bashing* programmers for programming Arduinos built from Arduinos before. Could I build something similar using spares from my workshop? After some research I managed to come up with some source for ESP32 microcontrollers which I had plenty in stock, however I found developing for these processors clunky and tiresome and so decided to port the software to run on my one of my Rapberry Pi Zeros.
 
 If you have a Raspberry Pi - this utility will flash the firmware for the YS1's cc1111 device from an intel hex source.
-After building a programming prong from pogo pins (Sourcingmap 33Pcs P125B Dia 2mm Length 33mm Spring Test Probes Testing Pins
-- Amazon) and buying a £50 'Helping Hand Clamp' (Helping Hands with Big Magnet Base, Soldering Third Hand with 6 PCB Pillars Circuit Board Holder and 5 Flexible Metal Arms Heavy Duty Base for Repair/Resoldering/Hobby/Crafts
-)- ('What!!???') - I finally had something that could flash the YS1 CC1111 chip!
+After building a programming prong from pogo pins* and buying a £50 'Helping Hand Clamp'* - 'What!!??? - I finally had something that could flash the YS1 CC1111 chip!
 I argued that at I could use the clamp for other projects - so at least I saved some money.
+
+*Sourcingmap 33Pcs P125B Dia 2mm Length 33mm Spring Test Probes Testing Pins = Amazon UK
+
+Helping Hands with Big Magnet Base, Soldering Third Hand with 6 PCB Pillars Circuit Board Holder and 5 Flexible Metal Arms Heavy Duty Base for Repair/Resoldering/Hobby/Crafts - Amazon UK
 
 
 I stand on the shoulders of Giants
