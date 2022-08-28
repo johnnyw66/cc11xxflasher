@@ -45,7 +45,7 @@ To Run
 
 Updating Firmware - (CCbootloader preinstalled) - a reminder
 ---
-If you flash the YS1 with a CCbootloader - you can then use your own USB rather than this home brew Rpi solutionto install further updates
+If you flash the YS1 with a CCbootloader - you can then use your own USB rather than this home brew Rpi solution to install further updates
 
 
 ````
