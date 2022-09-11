@@ -10,6 +10,8 @@ My C skills are very rusty - but I did have 20+ years C/C++ in the games industr
 
 I decided to name this port.. *PiFet*!
 
+Parts Needed
+---
 
 If you have a Raspberry Pi - this utility will flash the firmware for the YS1's cc1111 device from an intel hex source.
 After building a programming prong from pogo pins* and buying a £50 'Helping Hand Clamp'* - 'What!!???' - I finally had something that could flash the YS1 CC1111 chip.
