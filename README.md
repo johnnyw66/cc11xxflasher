@@ -5,8 +5,9 @@ My intial problem was that the device was not even enumerating on the OS USB sta
 indicator that I didn't get what I paid for. More worringly I found that my supplier was not the only one selling these 'empty' devices. 
 
 On Discord I found another buyer had bought one from another recommended supplier which also turn out to be a pup. The only way of getting the device back to life was to buy a flash programmer another £50 to £120. WTF! Since I only needed to flash the firmware once, buying one of the programmers (GoodFET, GreatFET, TI-CCDebugger) was going to be expensive. I've seen *bit-bashing* programmers for programming Arduinos built from Arduinos before. Could I build something similar using spares from my workshop? After some research I managed to come up with some source for ESP32 microcontrollers which I had plenty in stock. However I found developing for these processors clunky and tiresome and so decided to port the software to run on my one of my Rapberry Pi Zeros. 
-The other albeit minor problem with the ESP version is that it only supported binary file format. Most firmware updates for the YS1 came in the HEX format.
+The other, albeit minor problem with the ESP version, is that it only supported binary files. Most firmware updates for the YS1 came in the HEX format.
 My C skills are very rusty - but I did have 20+ years C/C++ in the games industry. It took less than a couple of hours to get the port completed. 
+
 I decided to name this port.. *PiFet*!
 
 
@@ -82,7 +83,7 @@ For the Yard Stick 1 (YS1) this would be
 
 https://github.com/atlas0fd00m/rfcat/blob/master/firmware/CCBootloader/CCBootloader-rfcat-ys1.hex
 
-For G1WVNFET (the flash software I ported described in this repo), run the command
+For PiFET (the flash software I ported described in this repo), run the command
 
 ./bin/flasher CCBootloader-rfcat-ys1.hex
 
