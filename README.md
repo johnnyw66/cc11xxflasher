@@ -23,7 +23,7 @@ I argued that at I could use the clamp for other projects - so at least I saved 
 
 
 
-I stand on the shoulders of Giants
+The Software - (I stand on the shoulders of Giants)
 ---
 
 Thank you to *Aaron Christophel* for his github ESP_CC_Flasher project. https://github.com/atc1441/ESP_CC_Flasher
