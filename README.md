@@ -1,5 +1,7 @@
 # cc11xxflasher PiFET
 
+![Home brew pogo programming device with Pi Zero](/images/ys1.jpg)
+
 Do you have a Yard Stick 1 (YS1) without the rfCat firmware? I paid good money for a YS1 which was advertised as having rfCat installed.
 My intial problem was that the device was not even enumerating on the OS USB stack - (I should have tested this before installing the Python libraries!) - a sure
 indicator that I didn't get what I paid for. More worringly I found that my supplier was not the only one selling these 'empty' devices. 
