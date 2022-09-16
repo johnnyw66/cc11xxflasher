@@ -19,7 +19,11 @@ If you have a Raspberry Pi - this utility will flash the firmware for the YS1's 
 After building a programming prong from pogo pins* and buying a £50 'Helping Hand Clamp'* - 'What!!???' - I finally had something that could flash the YS1 CC1111 chip.
 I argued that at I could use the clamp for other projects - so at least I saved some money. It took me 2 hours to build the pogo prong. 
 
+![Home brew pogo programming device with Pi Zero](/images/pogo.jpg)
+
 *Sourcingmap 33Pcs P125B Dia 2mm Length 33mm Spring Test Probes Testing Pins - Amazon UK
+
+![Home brew pogo programming device with Pi Zero](/images/helphands.jpg)
 
 *Helping Hands with Big Magnet Base, Soldering Third Hand with 6 PCB Pillars Circuit Board Holder and 5 Flexible Metal Arms Heavy Duty Base for Repair/Resoldering/Hobby/Crafts - Amazon UK
 
