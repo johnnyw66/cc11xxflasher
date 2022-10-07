@@ -17,7 +17,7 @@ Parts Needed
 
 If you have a Raspberry Pi - this utility will flash the firmware for the YS1's cc1111 device from an intel hex source.
 After building a programming prong from pogo pins* and buying a £50 'Helping Hand Clamp'* - 'What!!???' - I finally had something that could flash the YS1 CC1111 chip.
-I argued that at I could use the clamp for other projects - so at least I saved some money. It took me 2 hours to build the pogo prong. 
+I argued that so long as I could use the clamp for other projects - at least I saved some money. It took me 2 hours to build the pogo prong. 
 
 ![Home brew pogo programming device with Pi Zero](/images/pogo.jpg)
 
