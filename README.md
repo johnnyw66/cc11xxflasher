@@ -8,7 +8,7 @@ indicator that I didn't get what I paid for. More worringly I found that my supp
 
 On Discord I found another buyer had bought one from another recommended supplier which also turn out to be a pup. The only way of getting the device back to life was to buy a flash programmer, adding another £50 to £120 to the cost. Since I only needed to flash the firmware once, buying one of the programmers (GoodFET, GreatFET, TI-CCDebugger) was going to be expensive. I've seen *bit-bashing* programmers for programming Arduinos built from Arduinos before. Could I build something similar using spares from my workshop? After some research I managed to come up with some source for ESP32. Despite having many of these microcontrollers in stock, I found the development process for the ESP32 clunky and tiresome and so decided to port the software to run on my one of my Rapberry Pi Zeros. 
 The other, albeit minor problem with the ESP version, is that it only supported binary files. Most firmware updates for the YS1 came in the intel HEX text format.
-My C skills are very rusty - but I did have 20+ years C/C++ in the games industry. It took less than a couple of hours to get the port completed. 
+My C skills were very rusty - but I did have 20+ years C/C++ in the games industry. I needn't have worried. It took less than a couple of hours to complete the port. 
 
 I decided to name this port.. *PiFet*!
 
